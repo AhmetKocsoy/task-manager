@@ -1,0 +1,64 @@
+
+.container{
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  margin: 100px;
+  padding: 100px;
+  max-width: 50%;
+  max-height: 75%;
+  border :1px solid black;
+  background-color: aquamarine;
+
+
+}
+.listItem, .finishedTask{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 20px;
+  color: darkred;
+}
+.finishedTask{
+  color:black;
+  text-decoration-line:line-through; 
+}
+.header{
+  font-style: italic;
+  font-weight: 300;
+  color:crimson;
+}
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-style: italic;
+}
+.submitBtn, .clearBtn{
+  background-color: cyan;
+  border:1px solid darkcyan;
+  border-radius: 10px;
+  color:dodgerblue;
+}
+.taskInput{
+  background-color: black;
+  color:azure;
+  border-radius: 10px;
+  min-width: 300px;
+  max-height: max-content;
+}
+.deleteTask, .finishTask{
+  margin:20px;
+  border: 1px solid green;
+  background-color: greenyellow;
+  color:darkgreen;
+  border-radius: 10px;
+}
+.noTasks{
+  margin-top: 20px;
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color:gray;
+}
