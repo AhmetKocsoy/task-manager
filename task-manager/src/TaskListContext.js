@@ -10,8 +10,6 @@ const TaskListContextProvider = props => {
   const [count, setCount] = useState(initialCount+0)
   const initialState = JSON.parse(localStorage.getItem('tasks')) || []
   const [tasks, setTasks] = useState(initialState)
-  const initialTask =localStorage.getItem('task')
-  let task;
 
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks))
@@ -37,15 +35,9 @@ const TaskListContextProvider = props => {
   }
 
   const finishTask = id => {
-    if(task!=initialTask){
-      task=document.getElementById(id)
-    }
-    else{
-      task = initialTask
-    }
-    task.className="finishedTask"
-    localStorage.setItem('task',task)
+    document.getElemetById(id).className="finishedTask"
   }
+  
 
   return (
     <TaskListContext.Provider
